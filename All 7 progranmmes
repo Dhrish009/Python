@@ -1,0 +1,38 @@
+All 7 programme together:
+Choice = int(input("Enter 1 for Fibonacci number\nEnter 2 for Prime number\nEnter 3 for Palindrome number\nEnter 4 for Reverse number\nEnter 5 for Armstrong number\nEnter 6 for Factorial number\nEnter 7 for Sum of n Number\nEnter the choice :"))
+
+match(Choice):
+    case 1 :
+        nterms = int(input("Enter a number : "))
+n1, n2 =0, 1
+count = 0
+
+if nterms >= 2:
+    
+    print("Fibonacci sequence:")
+    while count < nterms:
+        print(n1)
+        nth = n1 + n2
+        n1 = n2
+        n2 = nth
+        count += 1
+else:
+    print("Enter another number----------")
+    
+match(Choice):
+    case 2 :
+        n = int(input("Enter a number : "))
+if n <=1 :
+    print("Not a prime number")
+else :
+    is_prime = True
+
+for i in range (2, int(n** 0.5) + 1) :
+    if n % i == 0:
+        is_prime = False
+        break
+if is_prime:
+    print ("Prime number")
+    
+else :
+    print("Not a prime number")
