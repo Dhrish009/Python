@@ -1,0 +1,35 @@
+Function
+To create a call - The data is feed once only and then we can call the data again and again in diff outputs
+def add(a,b):
+    print(f"{a} + {b} = {a+b}")
+
+def sub(a,b):
+    print(f"{a} - {b} = {a-b}")
+
+def mul(a,b):
+    print(f"{a} * {b} = {a*b}")
+
+def mod(a,b):
+    print(f"{a} % {b} = {a%b}")
+
+def div(a,b):
+    print(f"{a} / {b} = {a/b}")
+
+
+num1 = int(input("Enter the value : "))
+num2 = int(input("Enter the value : "))
+
+choice = int(input("Enter 1 for +\nEnter 2 for - \nEnter 3 for * \nEnter 4 for % \nEnter 5 for / \nEnter the choice : "))
+
+if choice == 1:
+    add(num1,num2)
+elif choice == 2:
+    sub(num1,num2)
+elif choice == 3:
+    mul(num1,num2)
+elif choice == 4:
+    mod(num1,num2)
+elif choice == 5:
+    div(num1,num2)
+else:
+    print("Value out of range"
