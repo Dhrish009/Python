@@ -33,3 +33,140 @@ elif choice == 5:
     div(num1,num2)
 else:
     print("Value out of range"
+.........................................................................
+def hell(name="drista"):
+    print(f"hellow {name}")
+
+
+name = input("Enter the name : ")
+
+hell(name)
+hell()
+
+
+def name():
+
+def name(n1,n2):
+
+def name(name = "hellow"):
+................................................................................
+def add(n1,n2,):
+    return f"{n1} + {n2} = {n1+n2}"
+
+
+
+num1 = int(input("Enter the value : "))
+
+num2 = int(input("Enter the value : "))
+
+value = add(num1,num2)
+
+print(value)
+
+print(add(num1,num2))
+.................................................................................
+All 7 programmes:
+def calculator(n1,n2):
+    choice = int(input("Enter 1 for Add\nEnter 2 for Sub\nEnter 3 for Div\nEnter 4 for multiply\nEnter 5 for mod\nEnter the choice : "))
+
+    if(choice ==1):
+        print(f"{num1} + {num2} = {num1+num2}")
+    elif(choice ==2):
+        print(f"{num1} - {num2} = {num1-num2}")
+    elif (choice ==3):
+        print(f"{num1} / {num2} = {num1/num2}")
+    elif(choice ==4):
+        print(f"{num1} * {num2} = {num1*num2}")
+    elif (choice ==5):
+        print (f"{num1} % {num2} = {num1%num2}")
+    else :
+        print("Invalid Input----Error---")
+
+        
+def armstrong(num):
+    
+    check = num
+    sum = 0
+
+    while num > 0 :
+        rem=num%10
+        sum+=rem**3
+        num//=10
+
+    if sum == check:
+        print ("armstrong")
+    else :
+        print("not armstrong")
+
+def palindrome (num):
+
+    temp = num
+    reverse = 0
+    while temp > 0:
+        digit = temp % 10
+        reverse = (reverse * 10) + digit
+        temp = temp // 10
+    if num == reverse:
+      print("Palindrome")
+    else:
+      print("Not Palindrome")
+
+def Reverse (num):
+    
+    reversednum =0
+
+    while num > 0:
+        digit = num % 10
+        reversednum = reversednum*10 + digit
+        num//=10
+
+    print(reversednum)
+
+def Factorial (num):
+    n=0
+    for i in range (1,num+1):
+        n += i
+        
+    print(n)
+
+def Fibonacci(nterms):
+    n1, n2 =0, 1
+    count = 0
+    if nterms <=0:
+        print("Please enter a positive integer")
+    elif nterms == 1:
+        print("Fibonacci sequence upto",nterms,":")
+        print(n1)
+    else:
+        print("Fibonacci sequence:")
+    while count < nterms:
+        print(n1)
+        nth = n1 + n2
+        n1 = n2
+        n2 = nth
+        count += 1
+
+
+choice = int(input("Enter 1 for Calculator\nEnter 2 for Armstrong\nEnter 3 for Palindrome\nEnter 4 for reverse\nEnter 5 for factorial\nEnter 6 for swaping\nEnter 7 for Fibonacci \nEnter the choice : "))
+
+if choice == 1:
+    num1 = int(input("Enter the value : "))
+
+    num2 = int(input("Enter the value : "))
+    calculator(num1,num2)
+elif choice == 2:
+    num = int(input("enter a number : "))
+    armstrong(num)
+elif choice == 3:
+    num = int(input("Enter a value : "))
+    palindrome(num)
+elif choice == 4:
+    num = int(input("Enter the number : "))
+    Reverse(num)
+elif choice == 5:
+    num = int(input("enter a value : "))
+    Factorial (num)
+elif choice == 7:
+    nterms = int(input("Enter a number : "))
+    Fibonacci (nterms)
+
