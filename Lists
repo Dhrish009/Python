@@ -1,0 +1,72 @@
+Collection - lists
+thislist = ["apple","kiwi","banana","cherry"]
+
+print(thislist)
+
+thislist.sort()
+
+print(thislist)
+
+print(thislist[2])
+
+print(thislist[0])
+
+print(thislist[:1])
+
+print(thislist[0:])
+
+print(thislist[0:1])
+
+print(thislist[0:3])
+
+for i in thislist:
+
+
+
+    print(i)
+
+for i in thislist:
+    if i == "apple":
+        print (i)
+        break
+if "apple" in thislist:
+    print ("Hello")
+
+print(len(thislist))
+.................................................................
+Collection - apprehend,remove,delete....
+
+fruit = []
+
+print (fruit)
+
+ran = int(input("enter a range : "))
+
+for i in range (ran) :
+         value = input(f"Enter a value in {i+1}:")
+         fruit.append(i)
+         
+print(fruit)
+
+fruit.insert(1, "orange")
+print(fruit)
+
+remo = input("Enter the value to remove :")
+
+fruit.remove(remo)
+print(fruit)
+
+print(fruit)
+fruit.pop()
+print(fruit)
+fruit.pop(1)
+print(fruit)
+del fruit [0]
+print(fruit)
+fruit.clear()
+print(fruit)
+mylist = fruit.copy()
+
+print(mylist)
+del fruit
+print(fruit)
