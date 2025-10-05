@@ -1,0 +1,44 @@
+fruit = []
+
+print (fruit)
+
+ran = int(input("enter a range : "))
+
+for i in range (ran) :
+         value = input(f"Enter a value in {i+1}:")
+         fruit.append(value)
+print(fruit)
+
+add = input("Add fruit name : ")
+fruit.insert(1, add)
+print(fruit)
+
+add = input("Add fruit name at last : ")
+fruit.append(add)
+print(fruit)
+
+fruit.pop()
+print(fruit)
+
+remo = input("Add fruit name to delete : ")
+fruit.remove(remo)
+print(fruit)
+
+remo = int(input("Add fruit value to delete : "))
+fruit.pop(remo)
+print(fruit)
+
+add = input("Add fruit name : ")
+fruit[2] = "kiwi"
+print(fruit)
+
+
+while True:
+    print("select menu")
+    value = input("do you want to continue Y|N :")
+
+    if value == 0:
+        break
+
+
+
