@@ -32,7 +32,7 @@ elif choice == 4:
 elif choice == 5:
     div(num1,num2)
 else:
-    print("Value out of range"
+    print("Value out of range")
 .........................................................................
 def hell(name="drista"):
     print(f"hellow {name}")
