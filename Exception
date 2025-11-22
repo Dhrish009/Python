@@ -1,0 +1,57 @@
+# num1 = int(input("Enter the value "))
+balance = 1000
+try:
+    if num1 >= balance:
+        print(f"{num1} amount is in process\nProcess Completed!!!!!")
+    else:
+        print("No amount | Less Amount!!!!!")
+    
+except:
+    print(f"Error Occure No Network Or Somethings else")
+
+else:
+    print("Redirecting to the Home page")
+    
+finally:
+    print("By-default redirection to the home page")
+
+..............................................................................................
+
+def calculator():
+    try:
+        # Get user input
+        num1 = float(input("Enter first number: "))
+        op = input("Enter operator (+, -, *, /): ")
+        num2 = float(input("Enter second number: "))
+
+        # Perform calculation based on operator
+        if op == '+':
+            result = num1 + num2
+        elif op == '-':
+            result = num1 - num2
+        elif op == '*':
+            result = num1 * num2
+        elif op == '/':
+            # Handle division by zero
+            if num2 == 0:
+                raise ZeroDivisionError("Cannot divide by zero!")
+            result = num1 / num2
+        else:
+            raise ValueError("Invalid operator!")
+
+        print("Result:", result)
+
+    # Handle specific exceptions
+    except ValueError as ve:
+        print("Value Error:", ve)
+
+    except ZeroDivisionError as zde:
+        print("Math Error:", zde)
+
+    # Catch all other unexpected errors
+    except Exception as e:
+        print("An unexpected error occurred:", e)
+
+
+# Run the calculator
+calculator()
