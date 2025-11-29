@@ -1,0 +1,58 @@
+class BasicCalculator:
+    def __init__(self, n1, n2):
+        print("Taking input from user")
+        self.num1 = n1
+        self.num2 = n2
+
+    def add(self):
+        return self.num1 + self.num2
+
+    def sub(self):
+        return self.num1 - self.num2
+
+    def mul(self):
+        return self.num1 * self.num2
+
+    def div(self):
+        if self.num2 == 0:
+            return "Error: cannot divide by zero"
+        return self.num1 / self.num2
+
+
+class ScientificCalculator(BasicCalculator):
+
+    def power(self):
+        return self.num1 ** self.num2
+
+    def squareroot(self):
+        return self.num1 ** 0.5
+
+
+num1 = int(input("Enter first value: "))
+num2 = int(input("Enter second value: "))
+choice = int(input(
+    "Enter 1 for add\n"
+    "Enter 2 for sub\n"
+    "Enter 3 for mul\n"
+    "Enter 4 for div\n"
+    "Enter 5 for power\n"
+    "Enter 6 for squareroot\n"
+    "Enter your choice: "
+))
+
+obj = ScientificCalculator(num1, num2)
+
+if choice == 1:
+    print("Result:", obj.add())
+elif choice == 2:
+    print("Result:", obj.sub())
+elif choice == 3:
+    print("Result:", obj.mul())
+elif choice == 4:
+    print("Result:", obj.div())
+elif choice == 5:
+    print("Result:", obj.power())
+elif choice == 6:
+    print("Result:", obj.squareroot())
+else:
+    print("Invalid choice")
